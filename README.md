@@ -1,4 +1,4 @@
-# Library Project
+# Manga Library Project
 
 This project is a manga library page made with HTML, JS, and CSS. The page allows users to add manga by title, 
 author, or subject. Users can also view a list of all mangas in the library, as well as a list of mangas that are currently checked out.
