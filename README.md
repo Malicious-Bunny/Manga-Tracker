@@ -19,3 +19,5 @@ The front-end is implemented using:
 ## Future updates
 
 * Local storage and cloud storage will be added
+<br>
+* Live Preview can be seen <a href="https://tar-genius.github.io/Manga-Tracker/">Here</a>
