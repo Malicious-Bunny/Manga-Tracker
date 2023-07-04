@@ -1,0 +1,43 @@
+Use object.create, to create object prototypes
+Object properties  are on a linked list of the object itself and the object prototypes
+example
+
+function Dio(){
+ this. Joe=0
+}
+Dio.prototype.stand= 'Stardust';
+
+if I try to refernece stand, it will first go to the excecution context of Dio, when it doesnt find stand it will check all of Dio's prototypes return stand's values
+
+*Its always best to return things rather than putting console.log in the function
+
+Apparently, the prototype method is used to reference the already existing object, thats why we can add methods to it
+um as TOP says, when you define all methods and operations under thesame code execution context( constructor space) it takes up alot of memory, thats why we use prototypes
+
+use Object.setprototypeOf(child,parent), to establish inheritance relationships between two objects
+use Object.getprototypeOf(child.prototype) to check if the relationship has been established
+You cant use child.prototype=parent.prototype, it will cause bad bad things to happen
+And its indirectly making a reference to parent.prototype, so whenever you add an operation or attribute to child.prototype, youre indirectly adding it to parent
+So when using the .call() function, the functions associated to prototypes arent automatically linked, so u have to use Object.setproperty, to link them
+
+*This in the global execution context, is a reference to the globalobject, ie the 'window' object
+when a function is used inside an operation, and the 'this' keyword is used in it, it no longer refers to the operation, since this is a reference to the object itself and the function is just a function inside the operation
+to solve this you can use arrow functions which basically follow the hierarchiecal execution context. Or return a function.call(this)
+
+*The method invocation is separated from the object when passed as an arguement
+You can solve it using the .bind() method
+
+Example
+-------
+const jakartha={
+   myCon: function(){
+     return "Funny"
+       }
+}
+
+setTimeOut(jakartha.myCon.bind(Jakartha), 1000) will work
+instead of setTimeOut(Jakartha.myCon, 1000)
+will generate an error because method invocations are separated from the object when passed in as an arguement.
+
+when definin an arrow function on a prototype, dont use it
+because an arrow function does not create an execution context and therefore any use of the 'this' keyword will be a reference to the global window object and not the object being prototyped

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <img src="styles/1308554.png" alt="bgimg" id="bgimg">
+    <header>
+        <div class="header">
+            <h2>Manga Tracker</h2>
+            <h3>We keep track of the number of mangas you're reading^^</h3>
+        </div>
+    </header>
+        <div class="table">
+            <button id="Add">Add Manga</button>
+            <table id="Mangas">
+                <thead>
+                    <tr>
+                        <th colspan="3">Title</th>
+                        <th colspan="3">Author</th>
+                        <th colspan="3">PageNo</th>
+                        <th colspan="3">Remove</th>
+                        <th colspan="3">Read?</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+        <form action="#" method="post" id="DataForm">
+            <div class="form">
+                <label for="title">Enter The manga title:)</label>
+                <input type="text" name="title" id="title" required placeholder="Title">
+                <label for="author">Enter The manga Author</label>
+                <input type="text" name="author" id="author" required placeholder="Author" >
+                <label for="Number">Enter current page you're reading</label>
+                <input type="number" name="page" id="page" required placeholder="Page Number">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+ <footer>
+        <div class="credits">
+         <p>Made By <span style="font-weight:bolder; font-size:larger;">MaliciousBunny</span><a href="https://github.com/Tar-Genius"><img src="styles/github (1).svg" alt="gh" id="gh"></a></p>
+        </div>
+ </footer>
+</body>
+</html>
