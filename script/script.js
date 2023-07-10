@@ -2,11 +2,43 @@ let Add= document.getElementById('Add');
 let form= document.getElementById('DataForm');
 let submit= document.getElementById('submit');
 let myLibrary = [];
-function Book(title, author, PageNo, read){
-    this.title = title;
-    this.author = author;
-    this.PageNo = PageNo;
-    this.read = read;
+class Book{
+    #title;
+    #author;
+    #PageNo;
+    #read;
+    constructor(title,author,PageNo,read){
+        this.#title=title;
+        this.#author=author;
+        this.#PageNo=PageNo;
+        this.#read=read;
+    }
+    get title(){
+        return this.#title;
+    }
+    get author(){
+        return this.#author;
+    }
+    get PageNo(){
+        return this.#PageNo;
+    }
+    get read(){
+        return this.#read;
+    }
+    set title(title){
+        this.#title=title;
+    }
+    set author(author){
+        this.#author=author;
+    }
+    set PageNo(PageNo){
+        this.#PageNo=PageNo;
+    }
+    set read(read){
+        this.#read=read;
+    }
+    
+
 }
 function AddBook(){
     let header= document.querySelector('header');
