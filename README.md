@@ -20,4 +20,4 @@ The front-end is implemented using:
 
 * Local storage and cloud storage will be added
 <br>
-* Live Preview can be seen <a href="https://tar-genius.github.io/Manga-Tracker/">Here</a>
+* Live Preview can be seen <a href="https://malicious-bunny.github.io/Manga-Tracker/">Here</a>
